@@ -71,7 +71,7 @@ body {
 
 @media (max-width: 499px) {
   .header {
-    height: 499px;
+    height: 275px;
     padding: 50px 24px;
   }
   .nav {
@@ -84,6 +84,9 @@ body {
   }
   .title {
     font-size: 1.5rem;
+  }
+  .hero-text {
+    margin-top: 50px;
   }
   .hero-text h1 {
     font-size: 1.25rem;
