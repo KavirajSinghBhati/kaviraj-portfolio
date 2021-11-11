@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  height: 768px;
+  background: url("../images/hero.jpg") center center/cover;
+  color: #fff;
+  padding: 93px 165px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav a,
+.hero-text a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.125rem;
+}
+
+.nav a:hover {
+  border-bottom: 1px solid white;
+}
+
+.nav a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.hero-text {
+  margin-top: 145px;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1.625rem;
+}
+
+.hero-text span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.hero-text a {
+  margin-top: 6.625rem;
+  text-decoration: underline;
+  display: block;
+}
+
+@media (max-width: 499px) {
+  .header {
+    height: 499px;
+    padding: 50px 24px;
+  }
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    display: none;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .hero-text h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0.8125rem;
+    text-align: center;
+  }
+  .hero-text span {
+    font-size: 0.8125rem;
+    display: table;
+    margin: 0 auto;
+  }
+  .hero-text a {
+    margin-top: 2.5625rem;
+    font-size: 0.8125rem;
+    text-align: center;
+  }
+}
